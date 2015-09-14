@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="col-sm-12">
+    <h1>Edit Order</h1>
+  </div>
+  <div class="col-sm-6">
+    <%= form_for @order do |f| %>
+      <div class="form-group">
+        <%= f.label :amount %>
+        <%= f.text_field :amount, class: "form-control" %>
+      </div>
+      <%= f.submit "Edit Order", class: "btn btn-default" %>
+    <% end %>
+  </div>
+</div>
